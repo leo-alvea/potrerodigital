@@ -2,36 +2,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header{
     background: #eeeeee;
+    height: 60px;
 }
-.header img{
-    width: 50px;
+.logo{
+    width: 36px;
+    height: 36px;
 }
 
 .header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
 }
 .header nav ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
-a {
-    font-size: 16px;
-    color: #0196F0;
+header a {
+    font-size: 18px;
+    color: #000000;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 5px 20px;
     display: block;
 }
 
 header a:hover{
-    background: #eeeeee;
+    /* background: #eeeeee; */
+    /* border-bottom: solid 3px #0196F0; */
+    color: #0196F0;
 }
 .header nav ul li ul{
     display: flex;
@@ -56,4 +61,24 @@ header a:hover{
 
 .header nav ul li:hover > ul{
     display: block;
+}
+
+.hero{
+    background-image: url(../images/Frente_Club_1600\ ×\ 1067.jpg);
+    height: 700px;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero h1{
+    color: #ffffff;
+    background-color: #000000;
+    padding: 16px;
+    border: 5px solid #0196F0;
+    font-size: 40px;
 }
