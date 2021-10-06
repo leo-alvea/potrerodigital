@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
 }
 
 .header{
@@ -34,7 +35,6 @@ header a {
 }
 
 header a:hover{
-    /* background: #eeeeee; */
     /* border-bottom: solid 3px #0196F0; */
     color: #0196F0;
 }
@@ -44,7 +44,7 @@ header a:hover{
 }
 .header nav ul li ul{
     position: absolute;
-    background: #eeeeee;
+    background: #f2f2f2;
 }
 .header nav ul li ul li{
     width: 180px;
@@ -63,9 +63,12 @@ header a:hover{
     display: block;
 }
 
+/* Hero */
+
 .hero{
     background-image: url(../images/FrenteClub1600×1067.jpg);
     height: 700px;
+    /* width: 100%; */
     background-size:cover;
     background-attachment:fixed;
     background-position: center center;
@@ -81,4 +84,59 @@ header a:hover{
     padding: 16px;
     border: 5px solid #0196F0;
     font-size: 40px;
+}
+
+/* Noticias */
+
+.noticias{
+    padding: 16px;
+    background-color: #f2f2f2;
+}
+
+.noticias__titulo{
+    font-size: 36px;
+    padding: 20px;
+    /* font-weight: 400; */
+    
+}
+.noticias__titulo:hover{
+    color: #0196F0;
+}
+
+.noticias-main{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.noticias-card{
+    width: 100%;
+    max-width: 450px;
+    position: relative;   
+
+}
+
+.noticias-card img{
+    width: 450px;
+    height: 450px;
+}
+
+.noticias-card a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticias-card__subtitulo {
+    font-weight: 700;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    position:absolute;
+    bottom:44px;
+    left: 0px;
+    padding: 5px;
+}
+
+.noticias-card__titulo{
+    font-weight: 400;
 }
