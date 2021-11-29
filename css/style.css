@@ -14,6 +14,8 @@
     top: 0;
     left: 0;
     z-index: 1000;
+    background-color: #dddddd;
+    
 }
 
 .header_contenido {
@@ -22,11 +24,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #dddddd;
 }
 
 .logo {
     /* width: 55px; */
     height: 48px;
+    background-color: transparent;
+}
+.logo__enlace{
+    margin-top: 2px;
+    padding: 0px
 }
 
 .header nav {
@@ -34,24 +42,29 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    background-color: #dddddd;
 }
 
 .header nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    background-color: #dddddd;
+    
 }
 header a {
     font-size: 18px;
-    color: #000000;
+    color: #0196f0;
     text-decoration: none;
     padding: 5px 20px;
     display: block;
+    background-color: #dddddd;
 }
 
 header a:hover {
     /* border-bottom: solid 3px #0196F0; */
     color: #0196f0;
+    background-color: #ffffff;
 }
 .header nav ul li ul {
     display: flex;
@@ -307,10 +320,11 @@ footer p {
 }
 
 .deportes__seccion__titulo {
-    font-size: 24px;
+    font-size: 28px;
     padding: 20px;
     /* font-weight: 400; */
     text-decoration: underline;
+    text-align: justify;
     color: #2f3037;
 }
 
@@ -319,7 +333,7 @@ footer p {
     padding: 0 20px;
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 50px;
     border-right: 3px solid #000000;
 }
@@ -357,6 +371,20 @@ aside h4 {
     font-weight: 400;
     font-size: 16px;
     color: #000000;
+}
+
+.verano_nav ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.verano_nav ul li{
+    line-height: 36px;
+    padding-left: 40px;
+    background-image: url(/images/sol.svg);
+    background-position: 0 0;
+    background-size: 36px 36px;
+    background-repeat: no-repeat; 
 }
 
 .contenedor__contacto{
